@@ -1,0 +1,27 @@
+using System;
+namespace DataTypes
+{
+	public class Program
+	{
+		public static void Main()
+		{
+			int g1, g2, g3, g4, g5;
+			double total, avg;
+		
+			Console.WriteLine("Enter 5 grades seperated in new line");
+
+			g1 = Convert.ToInt32(Console.ReadLine());
+			g2 = Convert.ToInt32(Console.ReadLine());
+			g3 = Convert.ToInt32(Console.ReadLine());
+			g4 = Convert.ToInt32(Console.ReadLine());
+			g5 = Convert.ToInt32(Console.ReadLine());
+
+			total = (g1 + g2 + g3 + g4 + g5);
+			avg = total/5;
+
+			Console.WriteLine("The average is " + avg + " and round off to " + (Math.Round(avg)));
+
+			Console.ReadKey();
+		}
+	}
+}
